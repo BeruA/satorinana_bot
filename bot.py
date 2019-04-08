@@ -541,7 +541,7 @@ async def on_message(message):
             else:
                 await app.send_message(message.channel, '1시간 주무셨어요~')
         else:
-            await app.send_message(message.channel, '<@" + message.author.id + "> 아직 안주무시네요~')
+            await app.send_message(message.channel, "<@" + message.author.id + "> 아직 안주무시네요~")
             
 access_token = os.environ["BOT_TOKEN"]
 app.run(access_token)
