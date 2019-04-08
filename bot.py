@@ -123,10 +123,10 @@ async def on_message(message):
         f.close()
         if  int(now_warn) <= 0:
             await app.add_roles(member, role)
-                await app.send_message(message.channel, "<@" + message.author.id + ">")
-                embed = discord.Embed(title="탈락이에요~", description="저런~", color=0xFC67E0)
-                embed.set_footer(text = "다시 해보세요~")
-                await app.send_message(message.channel, embed=embed)
+            await app.send_message(message.channel, "<@" + message.author.id + ">")
+            embed = discord.Embed(title="탈락이에요~", description="저런~", color=0xFC67E0)
+            embed.set_footer(text = "다시 해보세요~")
+            await app.send_message(message.channel, embed=embed)
             os.remove(message.server.id + "jenga.txt")
 
         else:
