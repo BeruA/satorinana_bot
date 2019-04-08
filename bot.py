@@ -308,7 +308,7 @@ async def on_message(message):
     if message.content.startswith('심심'):
         await app.send_message(message.channel, '저랑 놀아요~')
         
-    if message.content.startswith('야! 베루아'):
+    if message.content.startswith('저기, 베루아'):
         await app.send_message(message.channel, '제작자에요~ `BeruA#7777`')
 
     if message.content.startswith('저기, 업데이트'):
@@ -364,7 +364,7 @@ async def on_message(message):
         else:
             await app.send_message(message.channel, '저가 너무 심했나요~')
     
-    elif message.content.startswith('야! 묵언수행'):
+    elif message.content.startswith('저기, 묵언수행'):
         await app.send_message(message.channel, '인내심이 어느정도인지 봐드리죠~\n`체팅이 없는 시간대에는 도배처럼 보일수 있으니 조심하세요~`')
         msg = await app.wait_for_message(timeout=60.0, author=message.author)
 
