@@ -425,71 +425,70 @@ async def on_message(message):
             await app.send_message(message.channel, '1분도 못 버티셨네요~')
             
     elif message.content.startswith('저기, 잘꺼야'):
-        await app.send_message(message.channel, '안녕히 주무세요~♥\n`체팅이 없는 시간대에는 도배처럼 보일수 있으니 조심하세요~`')
+        await app.send_message(message.channel, '잘쟈♥')
         msg = await app.wait_for_message(timeout=3600.0, author=message.author)
 
         if msg is None:
-            await app.send_message(message.channel, "우리 <@" + message.author.id + ">님은 꿈나라에 간지 1시간째...")
+            await app.send_message(message.channel, "우리 <@" + message.author.id + ">는 꿈나라에 간지 1시간째...")
             msg = await app.wait_for_message(timeout=7200.0, author=message.author)
             
             if msg is None:
-                await app.send_message(message.channel, "우리 <@" + message.author.id + ">님은 꿈나라에 간지 3시간째...")
+                await app.send_message(message.channel, "우리 <@" + message.author.id + ">는 꿈나라에 간지 3시간째...")
                 msg = await app.wait_for_message(timeout=3600.0, author=message.author)
             
                 if msg is None:
-                    await app.send_message(message.channel, "우리 <@" + message.author.id + ">님은 꿈나라에 간지 4시간째...")
+                    await app.send_message(message.channel, "우리 <@" + message.author.id + ">는 꿈나라에 간지 4시간째...")
                     msg = await app.wait_for_message(timeout=3600.0, author=message.author)
 
                     if msg is None:
-                        await app.send_message(message.channel, "우리 <@" + message.author.id + ">님은 꿈나라에 간지 5시간째...")
+                        await app.send_message(message.channel, "우리 <@" + message.author.id + ">는 꿈나라에 간지 5시간째...")
                         msg = await app.wait_for_message(timeout=3600.0, author=message.author)
 
                         if msg is None:
-                            await app.send_message(message.channel, "우리 <@" + message.author.id + ">님은 꿈나라에 간지 6시간째...")
+                            await app.send_message(message.channel, "우리 <@" + message.author.id + ">는 꿈나라에 간지 6시간째...")
                             msg = await app.wait_for_message(timeout=3600.0, author=message.author)
 
                             if msg is None:
-                                await app.send_message(message.channel, "우리 <@" + message.author.id + ">님은 꿈나라에 간지 7시간째...")
+                                await app.send_message(message.channel, "우리 <@" + message.author.id + ">는 꿈나라에 간지 7시간째...")
                                 msg = await app.wait_for_message(timeout=3600.0, author=message.author)
 
                                 if msg is None:
-                                    await app.send_message(message.channel, "우리 <@" + message.author.id + ">님은 꿈나라에 간지 8시간째...")
+                                    await app.send_message(message.channel, "우리 <@" + message.author.id + ">는 꿈나라에 간지 8시간째...")
                                     msg = await app.wait_for_message(timeout=3600, author=message.author)
 
                                     if msg is None:
-                                        await app.send_message(message.channel, "우리 <@" + message.author.id + ">님은 꿈나라에 간지 9시간째...")
+                                        await app.send_message(message.channel, "우리 <@" + message.author.id + ">는 꿈나라에 간지 9시간째...")
                                         msg = await app.wait_for_message(timeout=3600, author=message.author)
 
                                         if msg is None:
-                                            await app.send_message(message.channel, "우리 <@" + message.author.id + ">님은 꿈나라에 간지 10시간째...")
+                                            await app.send_message(message.channel, "우리 <@" + message.author.id + ">는 꿈나라에 간지 10시간째...")
                                             msg = await app.wait_for_message(timeout=3600, author=message.author)
 
                                             if msg is None:
-                                                await app.send_message(message.channel, "우리 <@" + message.author.id + ">님은 꿈나라에 간지 11시간째...")
+                                                await app.send_message(message.channel, "우리 <@" + message.author.id + ">는 꿈나라에 간지 11시간째...")
                                                 msg = await app.wait_for_message(timeout=3600, author=message.author)
 
                                                 if msg is None:
-                                                    await app.send_message(message.channel, "우리 <@" + message.author.id + ">님은 꿈나라에 간지 12시간째...")
+                                                    await app.send_message(message.channel, "우리 <@" + message.author.id + ">는 꿈나라에 간지 12시간째...")
                                                     msg = await app.wait_for_message(timeout=3600, author=message.author)
 
                                                     if msg is None:
-                                                        await app.send_message(message.channel, "우리 <@" + message.author.id + ">님은 꿈나라에 간지 13시간째...")
+                                                        await app.send_message(message.channel, "우리 <@" + message.author.id + ">는 꿈나라에 간지 13시간째...")
                                                         msg = await app.wait_for_message(timeout=3600, author=message.author)
 
                                                         if msg is None:
-                                                            await app.send_message(message.channel, "우리 <@" + message.author.id + ">님은 꿈나라에 간지 14시간째...")
+                                                            await app.send_message(message.channel, "우리 <@" + message.author.id + ">는 꿈나라에 간지 14시간째...")
                                                             msg = await app.wait_for_message(timeout=3600, author=message.author)
 
                                                             if msg is None:
-                                                                await app.send_message(message.channel, "우리 <@" + message.author.id + ">님은 꿈나라에 간지 15시간째...")
+                                                                await app.send_message(message.channel, "우리 <@" + message.author.id + ">는 꿈나라에 간지 15시간째...")
                                                                 msg = await app.wait_for_message(timeout=3600, author=message.author)
 
                                                                 if msg is None:
-                                                                    await app.send_message(message.channel, "우리 <@" + message.author.id + ">님은 꿈나라에 간지 16시간째...")
-                                                                    msg = await app.wait_for_message(timeout=3600, author=message.author)
+                                                                    await app.send_message(message.channel, "우리 <@" + message.author.id + ">는 꿈나라에 간지 16시간째....?? 아니 시발 왜 안일어나 죽은거 아님??")
                                                                     return
 
-                                                                else:                                                                                                                                                else:
+                                                                else:
                                                                     await app.send_message(message.channel, '15시간 잤네')
                                                             else:
                                                                 await app.send_message(message.channel, '14시간 잤네')
