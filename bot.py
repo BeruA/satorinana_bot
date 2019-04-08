@@ -202,3 +202,6 @@ async def on_message(message):
                 await app.send_message(message.channel,"<@" + vmention_id + "> 님을 먼저 스폰해주세요~")
         else:
             await app.send_message(message.channel, "명령어를 정확히 써주세요~")
+
+access_token = os.environ["BOT_TOKEN"]
+app.run(access_token)
