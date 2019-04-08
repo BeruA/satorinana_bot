@@ -483,11 +483,35 @@ async def on_message(message):
                                                             if msg is None:
                                                                 await app.send_message(message.channel, "우리 <@" + message.author.id + ">는 꿈나라에 간지 15시간째...")
                                                                 msg = await app.wait_for_message(timeout=3600, author=message.author)
-
+                                                                
                                                                 if msg is None:
-                                                                    await app.send_message(message.channel, "우리 <@" + message.author.id + ">는 꿈나라에 간지 16시간째....?? 아니 시발 왜 안일어나 죽은거 아님??")
-                                                                    return
-
+                                                                    await app.send_message(message.channel, "우리 <@" + message.author.id + ">님은 꿈나라에 간지 16시간째...")
+                                                                    msg = await app.wait_for_message(timeout=3600, author=message.author)
+                                                                    
+                                                                    if msg is None:
+                                                                        await app.send_message(message.channel, "우리 <@" + message.author.id + ">님은 꿈나라에 간지 17시간째...")
+                                                                        msg = await app.wait_for_message(timeout=3600, author=message.author)
+                                                                        
+                                                                        if msg is None:
+                                                                            await app.send_message(message.channel, "우리 <@" + message.author.id + ">님은 꿈나라에 간지 18시간째...")
+                                                                            msg = await app.wait_for_message(timeout=3600, author=message.author)
+                                                                            
+                                                                            if msg is None:
+                                                                                await app.send_message(message.channel, "우리 <@" + message.author.id + ">님은 꿈나라에 간지 19시간째...")
+                                                                                msg = await app.wait_for_message(timeout=3600, author=message.author)
+                                                                                
+                                                                                if msg is None:
+                                                                                    await app.send_message(message.channel, "우리 <@" + message.author.id + ">님은 꿈나라에 간지 20시간째...더는 못 세겠어요~")
+                                                                                    return
+                                                                                
+                                                                                else:
+                                                                                    await app.send_message(message.channel, "19시간 주무셨어요~")
+                                                                            else:
+                                                                                await app.send_message(message.channel, "18시간 주무셨어요~")
+                                                                        else:
+                                                                            await app.send_message(message.channel, "17시간 주무셨어요~")
+                                                                    else:
+                                                                        await app.send_message(message.channel, "16시간 주무셨어요~")
                                                                 else:
                                                                     await app.send_message(message.channel, '15시간 잤네')
                                                             else:
