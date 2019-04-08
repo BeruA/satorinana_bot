@@ -505,41 +505,41 @@ async def on_message(message):
                                                                                     return
                                                                                 
                                                                                 else:
-                                                                                    await app.send_message(message.channel, "19시간 주무셨어요~")
+                                                                                    await app.send_message(message.channel, "<@" + message.author.id + "> 19시간 주무셨어요~")
                                                                             else:
-                                                                                await app.send_message(message.channel, "18시간 주무셨어요~")
+                                                                                await app.send_message(message.channel, "<@" + message.author.id + "> 18시간 주무셨어요~")
                                                                         else:
-                                                                            await app.send_message(message.channel, "17시간 주무셨어요~")
+                                                                            await app.send_message(message.channel, "<@" + message.author.id + "> 17시간 주무셨어요~")
                                                                     else:
-                                                                        await app.send_message(message.channel, "16시간 주무셨어요~")
+                                                                        await app.send_message(message.channel, "<@" + message.author.id + "> 16시간 주무셨어요~")
                                                                 else:
-                                                                    await app.send_message(message.channel, '15시간 주무셨어요~')
+                                                                    await app.send_message(message.channel, "<@" + message.author.id + "> 15시간 주무셨어요~")
                                                             else:
-                                                                await app.send_message(message.channel, '14시간 주무셨어요~')
+                                                                await app.send_message(message.channel, "<@" + message.author.id + "> 14시간 주무셨어요~")
                                                         else:
-                                                            await app.send_message(message.channel, '13시간 주무셨어요~')
+                                                            await app.send_message(message.channel, "<@" + message.author.id + "> 13시간 주무셨어요~")
                                                     else:
-                                                        await app.send_message(message.channel, '12시간 주무셨어요~')
+                                                        await app.send_message(message.channel, "<@" + message.author.id + "> 12시간 주무셨어요~")
                                                 else:
-                                                    await app.send_message(message.channel, '11시간 주무셨어요~')
+                                                    await app.send_message(message.channel, "<@" + message.author.id + "> 11시간 주무셨어요~")
                                             else:
-                                                await app.send_message(message.channel, '10시간 주무셨어요~')
+                                                await app.send_message(message.channel, "<@" + message.author.id + "> 10시간 주무셨어요~")
                                         else:
-                                            await app.send_message(message.channel, '9시간 주무셨어요~')
+                                            await app.send_message(message.channel, "<@" + message.author.id + "> 9시간 주무셨어요~")
                                     else:
-                                        await app.send_message(message.channel, '8시간 주무셨어요~')
+                                        await app.send_message(message.channel, "<@" + message.author.id + "> 8시간 주무셨어요~")
                                 else:
-                                    await app.send_message(message.channel, '7시간 주무셨어요~')
+                                    await app.send_message(message.channel, "<@" + message.author.id + "> 7시간 주무셨어요~")
                             else:
-                                await app.send_message(message.channel, '6시간 주무셨어요~')
+                                await app.send_message(message.channel, "<@" + message.author.id + "> 6시간 주무셨어요~")
                         else:
-                            await app.send_message(message.channel, '5시간 주무셨어요~')
+                            await app.send_message(message.channel, "<@" + message.author.id + "> 5시간 주무셨어요~")
                     else:
-                        await app.send_message(message.channel, '4시간 주무셨어요~')
+                        await app.send_message(message.channel, "<@" + message.author.id + "> 4시간 주무셨어요~")
                 else:
-                    await app.send_message(message.channel, '3시간 주무셨어요~')
+                    await app.send_message(message.channel, "<@" + message.author.id + "> 3시간 주무셨어요~")
             else:
-                await app.send_message(message.channel, '1시간 주무셨어요~')
+                await app.send_message(message.channel, "<@" + message.author.id + "> 1시간 주무셨어요~")
         else:
             await app.send_message(message.channel, "<@" + message.author.id + "> 아직 안주무시네요~")
             
