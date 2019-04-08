@@ -425,7 +425,7 @@ async def on_message(message):
             await app.send_message(message.channel, '1분도 못 버티셨네요~')
             
     elif message.content.startswith('저기, 잘꺼야'):
-        await app.send_message(message.channel, '잘쟈♥')
+        await app.send_message(message.channel, '안녕히 주무세요~\n`체팅이 없는 시간대에는 도배처럼 보일수 있으니 조심하세요~`')
         msg = await app.wait_for_message(timeout=3600.0, author=message.author)
 
         if msg is None:
