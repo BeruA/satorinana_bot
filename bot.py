@@ -371,5 +371,58 @@ async def on_message(message):
         else:
             await app.send_message(message.channel, '저가 너무 심했나요~')
             
+     elif message.content.startswith('저기, 묵언수행'):
+        await app.send_message(message.channel, "인내심이 어느정도인지 봐드리죠~\n`체팅이 없는 시간대에는 도배처럼 보일수 있으니 조심하세요~`")
+        msg = await app.wait_for_message(timeout=60.0, author=message.author)
+        
+        if msg is None:
+            await app.send_message(message.channel, "<@" + message.author.id + "> 1분 버티셨어요~")
+            msg = await app.wait_for_message(timeout=540.0, author=message.author)
+            
+            if msg is None:
+                await app.send_message(message.channel, "<@" + message.author.id + "> 10분 버티셨어요~")
+                msg = await app.wait_for_message(timeout=3000.0, author=message.author)
+            
+                if msg is None:
+                    await app.send_message(message.channel, "<@" + message.author.id + "> 1시간 버티셨어요~")
+                    msg = await app.wait_for_message(timeout=3600.0, author=message.author)
+
+                    if msg is None:
+                        await app.send_message(message.channel, "<@" + message.author.id + "> 2시간 버티셨어요~")
+                        msg = await app.wait_for_message(timeout=3600.0, author=message.author)
+
+                        if msg is None:
+                            await app.send_message(message.channel, "<@" + message.author.id + "> 3시간 버티셨어요~")
+                            msg = await app.wait_for_message(timeout=7200.0, author=message.author)
+
+                            if msg is None:
+                                await app.send_message(message.channel, "<@" + message.author.id + "> 5시간 버티셨어요~")
+                                msg = await app.wait_for_message(timeout=7200.0, author=message.author)
+
+                                if msg is None:
+                                    await app.send_message(message.channel, "<@" + message.author.id + "> 7시간 버티셨어요~")
+                                    msg = await app.wait_for_message(timeout=10800, author=message.author)
+
+                                    if msg is None:
+                                        await app.send_message(message.channel, "<@" + message.author.id + "> 10시간 동안 버티셨네요~ 대단해요! 더는 못 세겠어요~")
+                                        return
+
+                                    else:
+                                        await app.send_message(message.channel, '아쉽다~ 10시간은 못 버티셨네요~')
+                                else:
+                                    await app.send_message(message.channel, '아쉽다~ 7시간은 못 버티셨네요~')
+                            else:
+                                await app.send_message(message.channel, '아쉽다~ 5시간은 못 버티셨네요~')
+                        else:
+                            await app.send_message(message.channel, '아쉽다~ 3시간은 못 버티셨네요~')
+                    else:
+                        await app.send_message(message.channel, '아쉽다~ 2시간은 못 버티셨네요~')
+                else:
+                    await app.send_message(message.channel, '아쉽다~ 1시간은 못 버티셨네요~')
+            else:
+                await app.send_message(message.channel, '아쉽다~ 10분은 못 버티셨네요~')
+        else:
+            await app.send_message(message.channel, '1분도 못 버티셨네요~')
+            
 access_token = os.environ["BOT_TOKEN"]
 app.run(access_token)
