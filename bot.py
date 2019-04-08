@@ -33,7 +33,12 @@ async def on_message(message):
         return None
     
     if message.content.startswith('저기, 명령어'):
-        embed = discord.Embed(title="명령어에요~", description="`저기, 명령어 [분야]`로 더 자세하게 보실수 있어요~\n# 종류 `기능,친목,게임,대화`", color=0xFC67E0)
+        embed = discord.Embed(title="명령어에요~", description="`저기, [분야] 명령어`로 더 자세하게 보실수 있어요~\n# 분야 \n`기능,친목,게임,대화`", color=0xFC67E0)
+        embed.set_footer(text = "문의는 `BeruA#7777`")
+        await app.send_message(message.channel, embed=embed)
+        
+    if message.content.startswith('저기, 기능 명령어'):
+        embed = discord.Embed(title="기능", description="# 역할 부여\n* 저기, 역할 추가 [역할 이름]\n* 저기, 역할 제거 [역할 이름]\n`나나봇의 역할보다 아래에 있는 역할들만 줄 수 있습니다!`\n\n# 알리미\n* 저기, 묵언수행\n* 저기, 잘꺼야\n`체팅을 치지 않은 시간을 카운트 함`\n\n# 추가 기능\n* 저기, 골라 [경우1 경우2ㆍㆍㆍ경우a]\n* 저기, 주사위\n* 저기, 사다리 [인원1 인원2 ㆍㆍㆍ 인원a/팀1 팀2ㆍㆍㆍ팀a]", color=0xFC67E0)
         embed.set_footer(text = "문의는 `BeruA#7777`")
         await app.send_message(message.channel, embed=embed)
         
