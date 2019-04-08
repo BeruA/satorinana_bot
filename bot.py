@@ -32,22 +32,7 @@ async def on_message(message):
 
     if message.author.bot:
         return None
-
-    if message.content.startswith('저기, 명령어'):
-        await app.send_message(message.channel, "```\n`저기, 명령어 [분야]`로 더 자세하게 보실수 있어요~\n# 종류 `기능,친목,게임,대화`\n```")
-        
-    if message.content.startswith('저기, 명령어 기능'):
-        await app.send_message(message.channel, "```\n# 역할 부여\n* 저기, 역할 추가 [역할 이름]\n* 저기, 역할 제거 [역할 이름]\n`나나봇의 역할보다 아래에 있는 역할들만 줄 수 있습니다!`\n\n# 알리미\n* 저기, 묵언수행\n* 저기, 잘꺼야\n`체팅을 치지 않은 시간을 카운트 함`\n\n# 추가 기능\n* 저기, 골라 [경우1 경우2ㆍㆍㆍ경우a]\n* 저기, 주사위\n* 저기, 사다리 [인원1 인원2 ㆍㆍㆍ 인원a/팀1 팀2ㆍㆍㆍ팀a]\n```")
-        
-    if message.content.startswith('저기, 명령어 친목'):
-        await app.send_message(message.channel, "```\n# 마감\n* 저기, 마감 [@맨션]\n`맨션당한 유저에게 일정량의 마감을 가감함`\n`처음엔 무조건 1개로 결정`\n\n# 전투\n* 저기, 싸우자 [@맨션]\n`맨션당한 유저를 공격`\n`처음엔 스폰을 먼저 함`\n* 저기, 죽지마 [@맨션]\n`맨션당한 유저를 회복`\n```")
-        
-    if message.content.startswith('저기, 명령어 게임'):
-        await app.send_message(message.channel, "```\n# 베스킨 라빈스 31\n* 저기, 시작 베스킨\n* 저기, 베스킨 [숫자]\n\n# 젠가(폭탄 돌리기)\n* 저기, 시작 젠가\n* 저기, 젠가\n```")
-        
-    if message.content.startswith('저기, 명령어 대화'):
-        await app.send_message(message.channel, "```\n# 소라고동님\n* 저기, 소라고동님 [할 말]\n\n# 따라쟁이\n* 저기, 나나\n`나나의 대답 후 할 말을 적으면 그대로 따라함`\n\n# 기타\n`거울,히오스,베루아,업데이트,베가스,에펙,에펠,시포디,안녕하살법`\n\n# 봇 정보\n`자기소개,패치노트,제작자`\n```")
-                               
+    
     if message.content.startswith('저기, 역할 추가'):
         role = ""
         rolename = message.content.split(" ")
