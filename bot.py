@@ -293,7 +293,7 @@ async def on_message(message):
         await app.send_message(message.channel, '저랑 놀아요~')
         
     if message.content.startswith('저기, 베루아'):
-        await app.send_message(message.channel, '제작자에요~ `BeruA#7777`')
+        await app.send_message(message.channel, "제작자에요~ `BeruA#7777`")
 
     if message.content.startswith('저기, 업데이트'):
         await app.send_message(message.channel, '주말에만 가능해요~')
@@ -317,7 +317,7 @@ async def on_message(message):
         await app.send_message(message.channel, '안녕하살법 받아치기~!')
 
     if message.content.startswith('저기, 패치노트'):
-        embed = discord.Embed(title="사토리 나나)", description="즘봇의 순한 버전이에요~", color=0xFC67E0)
+        embed = discord.Embed(title="사토리 나나", description="즘봇의 순한 버전이에요~", color=0xFC67E0)
         embed.set_footer(text = "제작자 - 베루아[BeruA#7777]")
         embed.set_image(url="https://i.imgur.com/vT9PnlU.png")
         await app.send_message(message.channel, embed=embed)
