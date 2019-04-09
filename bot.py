@@ -276,7 +276,7 @@ async def on_message(message):
     if message.content.startswith("저기, 사다리"):
         await app.send_message(message.channel, '사다리를 타는 중이에요~')
         time.sleep(2)
-        team = message.content[9:]
+        team = message.content[8:]
         peopleteam = team.split("/")
         people = peopleteam[0]
         team = peopleteam[1]
