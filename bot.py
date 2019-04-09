@@ -252,19 +252,19 @@ async def on_message(message):
                 elif int(ram) > 0 and int(ram) < 7:
                     await app.send_message(message.channel, "<@" + message.author.id + "> 님이 <@" + mention_id + "> 님한테 마감 `" + ram + "`개를 선물해주셨어요~\n")
                     time.sleep(0.5)
-                    await app.send_message(message.channel, "<@" + mention_id + "> 님은 `마감`이 `" + now_warn + "개`나 가지고 계시네요~")
+                    await app.send_message(message.channel, "<@" + mention_id + "> 님은 `마감`을 `" + now_warn + "개`나 가지고 계시네요~")
 
                 elif int(ram) >= 7:
                     await app.send_message(message.channel, "대박~!!!")
                     time.sleep(0.5)
-                    await app.send_message(message.channel, "<@" + message.author.id + "> 님이 <@" + mention_id + "> 님한테 엄청난 양의 마감 `" + ram + "`개를 해주셨어요~!!\n")
+                    await app.send_message(message.channel, "<@" + message.author.id + "> 님이 <@" + mention_id + "> 님한테 엄청난 양의 마감 `" + ram + "`개를 선물로 주셨어요~!!\n")
                     time.sleep(0.5)
-                    await app.send_message(message.channel, "<@" + mention_id + "> 님은 `마감`이 `" + now_warn + "개`나 가지고 계시네요~")
+                    await app.send_message(message.channel, "<@" + mention_id + "> 님은 `마감`을 `" + now_warn + "개`나 가지고 계시네요~")
 
                 elif int(ram) < 0:
                     await app.send_message(message.channel, "천사같은<@" + message.author.id + "> 님이 <@" + mention_id + "> 님한테 마감 `" + ram + "`개를 해결해주셨네요~\n")
                     time.sleep(0.5)
-                    await app.send_message(message.channel, "<@" + mention_id + "> 님은 `마감`이 `" + now_warn + "개`나 가지고 계시네요~")
+                    await app.send_message(message.channel, "<@" + mention_id + "> 님은 `마감`을 `" + now_warn + "개`나 가지고 계시네요~")
             else:
                 f = open(message.server.id + " _ " + mention_id + ".txt", 'w')
                 f.write("1")
