@@ -15,18 +15,6 @@ async def on_ready():
     await app.change_presence(game=discord.Game(name="도움말 = 저기, 명령어"))
 
 @app.event
-async def on_member_join(member):
-    fmt = '{0.mention}님! 어서오세요~'
-    channel = member.server.get_channel("495166582113173506")
-    await app.send_message(channel, fmt.format(member, member.server))
- 
-@app.event
-async def on_member_remove(member):
-    channel = member.server.get_channel("495166582113173506")
-    fmt = '{0.mention}님! 언젠가 다시 만나요~'
-    await app.send_message(channel, fmt.format(member, member.server))
-
-@app.event
 async def on_message(message):
     
     if message.author.bot:
